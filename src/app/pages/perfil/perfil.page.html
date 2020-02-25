@@ -1,0 +1,35 @@
+<ion-header class = "banner" no-border translucent>
+  <ion-buttons slot="start" class = "atras">  
+    <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+  <ion-img src="/assets/logo.png" class = "logo"></ion-img>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-avatar class="avatar">
+    <img src="/assets/erick.png">
+    <ion-button fill="clear" 
+                class="editar-foto"
+                (click)="presentActionSheet()">Editar foto</ion-button>
+  </ion-avatar>
+
+  <br>
+  <div class="datos">
+      <ion-item>
+        <ion-label position="stacked">Datos del estudiante</ion-label>
+        <ion-input placeholder="Nombre"></ion-input>
+        <ion-input placeholder="Apellidos"></ion-input>
+        <ion-input placeholder="Matricula"></ion-input>
+        <ion-input placeholder="Domicilio"></ion-input>
+        <ion-input placeholder="Correo Electrónico"></ion-input>
+        <ion-input placeholder="Teléfono"></ion-input>
+        <ion-input placeholder="Cuatrimestre"></ion-input>
+      </ion-item>
+    </div>
+  <br>
+      
+  <ion-button fill="clear" 
+              class="btn-cerrar" 
+              (click)="presentAlert()">Cerrar Sesión</ion-button>
+        
+</ion-content>
